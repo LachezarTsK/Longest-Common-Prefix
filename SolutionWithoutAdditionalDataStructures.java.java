@@ -1,3 +1,4 @@
+
 public class SolutionWithoutAdditionalDataStructures {
 
     public String longestCommonPrefix(String[] strs) {
