@@ -1,11 +1,12 @@
 
+
+var longestCP;
+var root;
+
 /**
  * @param {string[]} strs
  * @return {string}
  */
-
-var longestCP;
-var root;
 
 var longestCommonPrefix = function (strs) {
 
