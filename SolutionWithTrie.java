@@ -1,5 +1,5 @@
 
-public class SolutionWithTrie {
+public class Solution {
 
     String longestCommonPrefix;
     TrieNode root;
@@ -35,8 +35,8 @@ public class SolutionWithTrie {
             currentCommonPrefix.append(ch);
         }
 
-        if (currentCommonPrefix.length() < longestCommonPrefix.length()) {
-            longestCommonPrefix = currentCommonPrefix.toString();
+        if (longestCommonPrefix.length() > prefix) {
+            longestCommonPrefix = word.substring(0, prefix);
         }
     }
 
@@ -58,7 +58,7 @@ public class SolutionWithTrie {
 class TrieNode {
 
     TrieNode[] alphabet;
-
+	
     public TrieNode() {
         alphabet = new TrieNode[26];
     }
